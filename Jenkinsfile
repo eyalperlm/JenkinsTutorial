@@ -3,8 +3,14 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Hello'
+                echo 'Building the application'
             }
         }
+        
+        stage('test') {
+            steps {
+                echo 'Testing the application'
+            }    
+        }    
     }
 }
